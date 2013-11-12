@@ -1,4 +1,4 @@
-/* Copyright 1994, 2002 by Steven Worley
+package tnm084.lab1.java;/* Copyright 1994, 2002 by Steven Worley
  * This software may be modified and redistributed without restriction
  * provided this comment header remains intact in the source code.
  * This code is provided with no warrantee, express or implied, for

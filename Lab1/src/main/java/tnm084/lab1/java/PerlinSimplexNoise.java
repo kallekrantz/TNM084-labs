@@ -1,3 +1,5 @@
+package tnm084.lab1.java;
+
 /** Java reference implementation of "Perlin Simplex Noise".
  *
  * Algorithm and original Java code by Ken Perlin (www.kenperlin.com).

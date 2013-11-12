@@ -1,4 +1,4 @@
-/*
+package tnm084.lab1.java;/*
  * A main program to create, init and display a ShaderPanel.
  *
  * Stefan Gustavson 2006-10-24

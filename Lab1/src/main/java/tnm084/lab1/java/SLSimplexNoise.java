@@ -1,3 +1,5 @@
+package tnm084.lab1.java;
+
 /** SLSimplexNoise.java: a model study for a
  * hardware-friendly GLSL simplex noise algorithm.
  *

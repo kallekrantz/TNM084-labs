@@ -1,3 +1,5 @@
+package tnm084.lab1.java;
+
 public class CalleidoScope extends Shader {
     private int dim = 3;
 	void shader(double[] p, double u, double v, double t) {

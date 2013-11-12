@@ -1,4 +1,4 @@
-/* Abstract class to define a simple procedural shader.
+package tnm084.lab1.java;/* Abstract class to define a simple procedural shader.
  * It contains a single method, shader(). The method
  * uses one of its parameters for output to avoid creating
  * a new output array for each invocation. This saves time.

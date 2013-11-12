@@ -1,4 +1,4 @@
-/*
+package tnm084.lab1.java;/*
  * A speed-improved simplex noise algorithm for 2D, 3D and 4D in Java.
  *
  * Based on example code by Stefan Gustavson (stegu@itn.liu.se)
@@ -241,7 +241,7 @@ public class SimplexNoise {  // Simplex noise in 2D, 3D and 4D
     // To find out which of the 24 possible simplices we're in, we need to
     // determine the magnitude ordering of x0, y0, z0 and w0.
     // The method below is a good way of finding the ordering of x,y,z,w and
-    // then find the correct traversal order for the simplex weÕre in.
+    // then find the correct traversal order for the simplex weï¿½re in.
     // First, six pair-wise comparisons are performed between each possible pair
     // of the four coordinates, and the results are used to add up binary bits
     // for an integer index.
