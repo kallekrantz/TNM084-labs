@@ -5,7 +5,6 @@
  *
  */
 
-import java.awt.*;
 import javax.swing.*;
 
 public class ShaderMain {
@@ -19,11 +18,11 @@ public class ShaderMain {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		// Add the content pane, we use only a single ShaderPanel here
-		ShaderPanel panel = new ShaderPanel(1000, 1000);
+		ShaderPanel panel = new ShaderPanel(512, 512);
 		frame.add(panel);
 		
 		// Create and associate a Shader with the ShaderPanel
-		panel.myShader = new DemoShader();
+		panel.myShader = new CalleidoScope();
 
 		// Pack and display the window
 		frame.pack();

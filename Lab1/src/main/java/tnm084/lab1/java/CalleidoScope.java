@@ -1,4 +1,4 @@
-public class DemoShader extends Shader {
+public class CalleidoScope extends Shader {
     private int dim = 3;
 	void shader(double[] p, double u, double v, double t) {
         u = u-0.5;
