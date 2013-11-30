@@ -9,7 +9,7 @@ displacement wall_displacement() {
   float displacementMaskX = step(maskConstant, segmentCoordX);
   float displacementMaskY = step(maskConstant, segmentCoordY);
   
-  float displacementAmplitude = -0.01;
+  float displacementAmplitude = -0.015;
 
   //  float disp = displacementAmplitude * clamp(displacementMaskX + displacementMaskY, 0, 1);
   float dispX = displacementAmplitude * displacementMaskX;
