@@ -3,15 +3,21 @@ displacement wall_displacement() {
   float segmentCoordX = segmentCount*mod(s,1/segmentCount);
   float segmentCoordY = segmentCount*mod(t,1/segmentCount);
   
-  float maskConstant = 0.02;
+  float maskConstant = 0.1;
 
-  float displacementMaskX = step(segmentCoordX, maskConstant);
-  float displacementMaskY = step(segmentCoordY, maskConstant);
+  float displacementMaskX = step(maskConstant, segmentCoordX);
+  float displacementMaskY = step(maskConstant, segmentCoordY);
   
-  float displacementAmplitude = 0.02;
+  float displacementAmplitude = -0.05;
 
-  float disp = displacementAmplitude * clamp(displacementMaskX + displacementMaskY, 0, 1);
+  //  float disp = displacementAmplitude * clamp(displacementMaskX + displacementMaskY, 0, 1);
+  float dispX = displacementAmplitude * displacementMaskX;
+  float dispY = displacementAmplitude * displacementMaskY;
 
-  P = P - N*disp;
+
+  //float disp = dispX + dispY;
+  float disp = clamp(dispX + dispY, displacementAmplitude, 0);
+
+  P = P + N*disp;
   N = calculatenormal(P);
 }
