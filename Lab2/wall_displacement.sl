@@ -1,5 +1,5 @@
 displacement wall_displacement() {
-  float segmentCount = 5;
+  float segmentCount = 8;
   //Gets the segmentCoordinates. Could probably be its own shader.
   float segmentCoordX = segmentCount*mod(s,1/segmentCount);
   float segmentCoordY = segmentCount*mod(t,1/segmentCount);
@@ -9,7 +9,7 @@ displacement wall_displacement() {
   float displacementMaskX = step(maskConstant, segmentCoordX);
   float displacementMaskY = step(maskConstant, segmentCoordY);
   
-  float displacementAmplitude = -0.015;
+  float displacementAmplitude = -0.005;
 
   //  float disp = displacementAmplitude * clamp(displacementMaskX + displacementMaskY, 0, 1);
   float dispX = displacementAmplitude * displacementMaskX;
@@ -19,6 +19,6 @@ displacement wall_displacement() {
   //needed in order to not get of 2*displacementAmplitude
   float disp = max(dispX,dispY);
 
-  P = P + N*disp;
+  P = P + N * disp;
   N = calculatenormal(P);
 }
